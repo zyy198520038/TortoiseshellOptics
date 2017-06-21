@@ -1,0 +1,220 @@
+html{
+  font-size: 18px;
+  font-family: helvetica;
+  line-height: 2;
+}
+.container{
+  width: 54rem;
+
+}
+header{
+  background-image: url("img/glasses-bg.png");
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top_nav{
+  padding: 1rem 2rem;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 1rem;
+}
+.headline{
+  display: flex;
+  justify-content: flex-end;
+  margin-top:10rem;
+  margin-right: -8rem;
+
+}
+.headline h1{
+  font-weight: bold;
+  color:black;
+  font-size: 2rem;
+
+  padding:1.5rem 5rem;
+  background-color: white;
+  text-align: right;
+}
+.logo{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo img{
+  height:1.5rem;
+}
+.logo h2{
+ padding-left: 1rem;
+}
+nav{
+  display: flex;
+  align-items: center;
+
+}
+nav a{
+  padding-left: 2rem;
+}
+.mobile{
+  display: none;
+}
+.body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner_group{
+  display: flex;
+  justify-content: center;
+}
+
+.banner1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding:3rem 5rem;
+  width: 5rem;
+
+}
+.banner1 img{
+  width:5rem;
+}
+.banner1 p{
+  text-align: center;
+  padding-top: 1rem;
+}
+.banner_group:nth-child(2){
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.banner2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width:35%;
+  padding-left: 5%
+
+}
+.banner2 h2{
+  background-color: cadetblue;
+  padding-left: 1.25rem;
+  padding: 0.5rem;
+  width: 10rem;
+  color:white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+footer img{
+  height:1.5rem;
+  padding-right: 1rem;
+}
+footer .container{
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding:4rem 4rem;
+}
+@media only screen and (max-width:1024px) {
+  header{
+    height: 22rem;
+  }
+  .top_nav{
+
+    padding: 1rem 2rem;
+    margin-top: 0px;
+  }
+  .headline{
+    display: flex;
+    justify-content: flex-end;
+    margin-top:5rem;
+    margin-right:2rem;
+
+  }
+  .headline h1{
+    font-size: 1.33rem;
+    padding:.75rem 4rem;
+
+  }
+}
+@media only screen and (max-width:480px) {
+  .normal{
+    display: none;
+  }
+  .mobile{
+    display: flex;
+  }
+  .top_nav{
+    width:100%;
+
+  }
+
+  .top_nav .logo, .top_nav nav{
+    padding: .5rem 1rem;
+  }
+  .top_nav h2{
+    display: none;
+  }
+  .headline{
+    display: flex;
+    justify-content: center;
+  }
+  .headline h1{
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 6rem;
+    width: 100%;
+    text-align: center;
+  }
+  header{
+    height: 20rem;
+    background-position:center;
+    background-size:cover;
+  }
+  .banner_group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner1:nth-child(1) img{
+    width:4rem;
+  }
+
+  .banner2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    width: 480px;
+  }
+  .banner2 h2{
+    width: 100%;
+    text-align: center;
+
+  }
+  .banner2 p{
+    width: 90%;
+
+  }
+
+
+  footer .container{
+    justify-content: center;
+  }
+  footer h2{
+    display: none;
+  }
+}
